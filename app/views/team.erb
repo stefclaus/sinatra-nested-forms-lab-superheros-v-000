@@ -7,10 +7,10 @@
 
 <h2>Display your heroes here</h2>
 <h1>Heroes</h1>
-<% @heroes.each do |hero| %>
+<% Team.all_members.each do |hero| %>
   <div class="hero">
-    <p>Name: <%= hero.name %></p><br>
-    <p>Power: <%= hero.power %></p><br>
-    <p>Biography: <%= hero.biography %></p><br>
+    <p>Name: <%= member.name %></p><br>
+    <p>Power: <%= member.power %></p><br>
+    <p>Biography: <%= member.bio %></p><br>
   </div><br>
 <% end %>
