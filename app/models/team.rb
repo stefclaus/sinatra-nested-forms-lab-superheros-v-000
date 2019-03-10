@@ -4,9 +4,9 @@ class Team
 
  MEMBERS = []
 
-  def initialize(params)
-    @name = params[:name]
-    @motto = params[:motto]
+  def initialize(name, motto)
+    @name = name
+    @motto = motto
     MEMBERS << self
   end
 
