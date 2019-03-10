@@ -1,3 +1,16 @@
+<h1>Display your Team here</h1>
 
+<div class="team">
+  <h3>Name: <%= @team.name %></h3><br>
+  <h4>Motto: <%= @team.motto %></h4>
+</div><br>
 
-
+<h2>Display your heroes here</h2>
+<h1>Heroes</h1>
+<% @heroes.each do |hero| %>
+  <div class="hero">
+    <p>Name: <%= hero.name %></p><br>
+    <p>Power: <%= hero.power %></p><br>
+    <p>Biography: <%= hero.biography %></p><br>
+  </div><br>
+<% end %>

@@ -11,7 +11,7 @@ class Team
   end
 
   def self.all
-    TEAMS
+    TEAMAS
   end
 
   def self.clear

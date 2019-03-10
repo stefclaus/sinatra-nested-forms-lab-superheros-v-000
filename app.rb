@@ -7,16 +7,16 @@ module NestedFormsLab
       erb :super_hero
     end
 
-#    post '/pirates' do
-#      @pirate = Pirate.new(params[:pirate])
+    post '/team' do
+      @team = Team.new(params[:team])
 
-#      params[:pirate][:ships].each do |details|
-#        Ship.new(details)
-#      end
-#
-#      @ships = Ship.all
-#      erb :"pirates/show"
-#    end
+      params[:team][:heroes].each do |hero|
+        Hero.new(details)
+      end
+
+      @heroes = Hero.all
+      erb :team
+    end
 
 
   end
