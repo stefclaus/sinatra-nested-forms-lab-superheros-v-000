@@ -2,17 +2,23 @@ class Team
 
   attr_accessor :name, :motto
 
- TEAMS = []
+ MEMBERS = []
 
   def initialize(params)
     @name = params[:name]
     @motto = params[:motto]
-    TEAMS << self
+    MEMBERS << self
   end
 
   def self.all
-    TEAMAS
+    MEMBERS
   end
+
+  def create_member(member)
+    new_member = Hero.new(member)
+    MEMBERS << new_member
+  end
+
 
   def self.clear
       self.all.clear
